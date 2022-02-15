@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Play:wght@400;700&display=swap');
+
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --text-shadow: #a50000;
+    --font-simple: 'Nunito', sans-serif;
+    --font-title: 'Play', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--branco);
+    background: var(--preto);
+    font-family: var(--font-simple);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+
+    font-family: var(--font-title);
+    font-weight: 700;
+    background: var(--preto);
+}
+
+.icon {
+    width: 300px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02b60eed-d9c8-4b8e-b826-3ed0694bcf26/deg9f52-110ec6f6-483f-421a-9862-1dd762380dd2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAyYjYwZWVkLWQ5YzgtNGI4ZS1iODI2LTNlZDA2OTRiY2YyNlwvZGVnOWY1Mi0xMTBlYzZmNi00ODNmLTQyMWEtOTg2Mi0xZGQ3NjIzODBkZDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mzGALdyrUiopnKCgGOKK3qQvrFSWNcxhlEF_CwiZJ20);
+    background-size: cover;
+    background-position-y: -3em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 400px;
+}
+
+.links {
+    color: var(--branco);
+    text-decoration: none;
+
+    margin: 0;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.links:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.main {
+    width: 100%;
+    height:620px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, .2) 20%, rgba(0, 0, 0, .2) 75%, rgba(0, 0, 0, 1) 99%), url(https://comodonerd.com.br/wp-content/uploads/2021/03/thumb-1920-1065270.jpg);
+    background-size: cover;
+}
+
+.container-quote {
+    width: 500px;
+    height: 100px;
+    padding-left: 20px;
+    position: absolute;
+
+    bottom: 20%;
+    left: 20%;
+    transform: translate(-20%);
+
+    font-size: 20pt;
+    font-family: 'Play', sans-serif;
+}
+
+.quote {
+    margin-bottom: 15px;
+}
+
+.quote-autor {
+    font-size: 15pt;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .5) 1%, rgba(0, 0, 0, .2) 99%);
+}
+
+.about h1 {
+    font-family: var(--font-title);
+    font-size: 40pt;
+    text-shadow: 2px 2px 2px var(--text-shadow);
+}
+
+.card-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 450px;
+    margin-top: 40px;
+}
+
+.img-card {
+    width: 320px;
+    height: 420px;
+    border-radius: 5px;
+
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/scarlet-witch-frietania-carika.jpg);
+    background-size: cover;
+}
+
+.description-card {
+    width: 65%;
+    height: 420px;
+    text-align: justify;
+    padding: 0 20px;
+    margin-left: 20px;
+    overflow-y: scroll;
+    scroll-behavior: initial;
+}
+.description-card a {
+    color: #a50000;
+    font-weight: 700;
+}
+
+.description-card::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.description-card::-webkit-scrollbar-button:start:decrement,
+.description-card::-webkit-scrollbar-button:end:increment  {
+	display: none;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: rgba(255, 0, 0, .2);
+	-webkit-border-radius: 6px;
+}
+
+.description-card::-webkit-scrollbar-thumb:vertical {
+    background: var(--text-shadow);
+    -webkit-border-radius: 6px;
+}
+
+/* POWERS & ABILITIES */
+
+.powers-and-abilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, .5) 15%, rgba(0, 0, 0, .5) 75%, rgba(0, 0, 0, 1) 99%), url(https://cdnb.artstation.com/p/assets/images/images/036/195/907/large/justine-lawrence-gonzales-jax-gonzales-scarlet-witch-final.jpg?1616998074);
+    background-size: cover;
+    background-position-y:  15%;
+}
+
+.powers-and-abilities h1 {
+    font-family: var(--font-title);
+    font-size: 40pt;
+    text-shadow: 2px 2px 2px var(--text-shadow);
+}
+
+/* POWERS */
+
+.powers {
+    width: 100%;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.powers h2 {
+    font-family: var(--font-title);
+    font-size: 25pt;
+    text-align: start;
+    padding: 30px 0 20px 20px;
+    text-shadow: 0 0 3px rgba(255, 255, 255, .8);
+}
+
+.powers p {
+    width: 50%;
+    font-family: var(--font-title);
+    font-size: 12pt;
+    text-align: justify;
+    margin: 15px 25% 30px 25%;
+
+}
+
+.power-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.power-list ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+    width: 250px;
+    border-radius: 10px;
+    background-color: #a50000;
+    box-shadow: inset 0 0 2em rgba(0, 0, 0, .8);
+    transition: .3s;
+}
+
+.power-list ul li:hover {
+    transform: scale(1.1);
+}
+
+/* ABILITIES */
+
+.abilities {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.abilities h2 {
+    font-family: var(--font-title);
+    font-size: 25pt;
+    text-align: start;
+
+    padding: 30px 0 20px 20px;
+    text-shadow: 0 0 3px rgba(255, 255, 255, .8);
+}
+
+.abilities p {
+    width: 50%;
+    font-family: var(--font-title);
+    font-size: 12pt;
+    text-align: justify;
+    margin: 15px 25% 30px 25%;
+
+}
+
+.abilities-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.abilities-list ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+    width: 250px;
+    border-radius: 10px;
+    background-color: #a50000;
+    box-shadow: inset 0 0 2em rgba(0, 0, 0, .8);
+    transition: .3s;
+}
+
+.abilities-list ul li:hover {
+    transform: scale(1.1);
+}
+
+/* GALLERY */
+
+.container-gallery {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-gallery h1 {
+    font-family: var(--font-title);
+    font-size: 40pt;
+    text-shadow: 2px 2px 2px var(--text-shadow);
+}
+
+.gallery {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    margin: 5% auto 0;
+    box-sizing: border-box;
+}
+
+.image-box {
+    margin: 0 4px;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 1s;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.image-box:hover {
+    flex-basis: 50%;
+}
+
+.active {
+    flex-basis: 50%;
+}
+
+.gallery:hover .active {
+    flex-basis: 0;
+}
+.image-box:nth-child(1):hover {
+    flex-basis: 50%;
+}
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact a {
+    font-size: 20pt;
+    text-decoration: none;
+    color: #fff;
+}
