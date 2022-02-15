@@ -7,4 +7,4 @@
 * Two images related to the subject
 * At least one heading with a stylized color, font and size
 * At least one paragraph with a stylized color, font and size
- A footer with links
+* A footer with links
